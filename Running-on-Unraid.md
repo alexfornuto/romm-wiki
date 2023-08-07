@@ -52,4 +52,4 @@ To use the MariaDB container setup in #prerequisites, add config options for the
 
 ## Shoutouts
 
-We want to give a special shoutout to @Smurre95 and @sfumat0 for their help documenting this process, and working towards getting RomM listed in CA. 🎉 
+We want to give a special shoutout to @Smurre95 and @sfumat0 for their help documenting this process, and working towards getting RomM listed in CA. 🤝 
