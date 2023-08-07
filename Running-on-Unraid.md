@@ -50,6 +50,10 @@ To use the MariaDB container setup in #prerequisites, add config options for the
 
 [Open an issue](https://github.com/zurdi15/romm/issues) if you're having trouble getting RomM to run. State that you're trying to run RomM in Unraid, be specific about the issue, and append screenshots of your configuration.
 
+### Updating
+
+To update to the latest version, select `force update` from the container list. **It's strongly recommended to backup the `appdata` folder (or mount it in a safe location) before updating, since tearing down the container will wipe the resources (covers, screenshots, etc.)
+
 ## Shoutouts
 
 We want to give a special shoutout to @Smurre95 and @sfumat0 for their help documenting this process, and working towards getting RomM listed in CA. 🤝 
