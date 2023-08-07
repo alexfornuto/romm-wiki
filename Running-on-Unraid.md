@@ -14,11 +14,11 @@ If you're planning to use MariaDB as your database, install it from the plugin r
 
 From the Unraid dashboard, click `APPS` in the navbar. In the search bar, search for `zurdi15 romm`; no results will appear, but that's normal. On the right side of the screen, click `Click Here To Get More Results From DockerHub`.
 
-![258859203-2582da70-dcae-4505-8463-23f8f2e6c64b](https://github.com/zurdi15/romm/assets/3247106/fa53f258-ebfd-426d-9998-f31bad180e62)
+![258859203-2582da70-dcae-4505-8463-23f8f2e6c64b](https://github.com/zurdi15/romm/assets/3247106/cd7c3eb0-2b12-4836-94e7-f485c64e51a4)
 
 One of the first results should be `romm` by `zurdi15`. Once you find it, click `Install`.
 
-![258859891-6efb8696-d5d7-45dd-b1b3-d6365ee4ff07](https://github.com/zurdi15/romm/assets/3247106/993f8e05-6190-4496-8b30-77c5ef2e65ca)
+![258859891-6efb8696-d5d7-45dd-b1b3-d6365ee4ff07](https://github.com/zurdi15/romm/assets/3247106/29c56fa4-a923-40e4-951a-0348f8551c86)
 
 If a confirmation window appears, click `YES` and CA will attempt to determine paths, ports and variables from the template.
 
