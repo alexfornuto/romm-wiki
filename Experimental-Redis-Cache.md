@@ -1,4 +1,4 @@
-[Redis](https://redis.io/docs/about/) is an open-source in-memory data store offering database, cache, and message broker functionalities. RomM has experimental Redis support, bringing multiple benefits:
+[Redis](https://redis.io/docs/about/) is an open-source in-memory data store offering database, cache, and message broker functionalities. RomM has experimental support for Redis, bringing multiple benefits:
 
 - Persistent Browser Sessions: User sessions survive container restarts
 - Asynchronous Scans: Scans run asynchronously, preventing main thread blocks
