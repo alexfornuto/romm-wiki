@@ -7,11 +7,11 @@ Authentication can be enabled by setting the `ROMM_AUTH_ENABLED` environment var
 - `ROMM_AUTH_USERNAME` and `ROMM_AUTH_PASSWORD` should be set to create the default admin user
 - `ROMM_AUTH_SECRET_KEY` is required and can be generated with `openssl rand -hex 32`
 
+**Note: sessions are backed by Redis, and login will not work without it. [See how to enable the experimental Redis backend.](https://github.com/zurdi15/romm/wiki/Experimental-Redis-Cache)**
+
 ### Sessions
 
 When the `/login` endpoint is called with valid credentials, a `session_id` is generated, stored as a cookie and sent to the browser. The same token is used to create a cache entry in Redis (or in-memory if Redis is disabled) which maps the token to the user. This way no sensitive information is stored on the client.
-
-It's important to note that only Redis-backed sessions will persist through container restarts, as in-memory sessions are cleared. [See how to enable the experimental Redis backend.]()
 
 ## Basic Authentication
 
