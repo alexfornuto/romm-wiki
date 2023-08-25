@@ -2,12 +2,51 @@ RomM provides support for various forms of authentication, granting flexibility 
 
 ### Enabling authentication
 
-Authentication can be enabled by setting the `ROMM_AUTH_ENABLED` environment variable to `true` (see [docker-compose.example.yml](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml)).
+Authentication can be enabled by setting the `ROMM_AUTH_ENABLED` environment variable to `true`.
 
 - `ROMM_AUTH_USERNAME` and `ROMM_AUTH_PASSWORD` should be set to create the default admin user
 - `ROMM_AUTH_SECRET_KEY` is required and can be generated with `openssl rand -hex 32`
 
 **Note: sessions are backed by Redis, and login will not work without it. [See how to enable the experimental Redis backend.](https://github.com/zurdi15/romm/wiki/Experimental-Redis-Cache)**
+
+<details>
+  <summary>Example docker-compose.yml</summary>
+  
+  ```yaml
+  version: "3"
+  volumes:
+    mysql_data:
+  services:
+    romm:
+      image: zurdi15/romm:latest
+      container_name: romm
+      environment:
+        - ROMM_DB_DRIVER=sqlite
+        - ROMM_AUTH_ENABLED=true
+        - ROMM_AUTH_SECRET_KEY=<secret key> # Generate a key with `openssl rand -hex 32`
+        - ROMM_AUTH_USERNAME=admin
+        - ROMM_AUTH_PASSWORD=<admin password> # default: admin
+        - ENABLE_EXPERIMENTAL_REDIS=true
+        - REDIS_HOST=redis
+        - REDIS_PORT=6379
+        - CLIENT_ID=<IGDB client id>
+        - CLIENT_SECRET=<IGDB client secret>
+      volumes:
+        - "/path/to/library:/romm/library"
+      ports:
+        - 80:80
+      depends_on:
+        - romm_db
+      restart: "unless-stopped"
+
+    redis:
+      image: redis:alpine
+      container_name: redis
+      restart: unless-stopped
+      ports:
+        - 6379:6379
+  ```
+</details>
 
 ### Sessions
 
