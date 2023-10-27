@@ -33,12 +33,12 @@ Authentication can be enabled by setting the `ROMM_AUTH_ENABLED` environment var
         - ENABLE_EXPERIMENTAL_REDIS=true
         - REDIS_HOST=redis
         - REDIS_PORT=6379
-        - CLIENT_ID=<IGDB client id>
-        - CLIENT_SECRET=<IGDB client secret>
+        - IGDB_CLIENT_ID=<IGDB client id>
+        - IGDB_CLIENT_SECRET=<IGDB client secret>
       volumes:
         - "/path/to/library:/romm/library"
       ports:
-        - 80:80
+        - 80:8080
       depends_on:
         - romm_db
       restart: "unless-stopped"
