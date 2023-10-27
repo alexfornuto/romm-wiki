@@ -1,7 +1,3 @@
-_Authentication will be generally available in version [2.0.0](https://github.com/zurdi15/romm/releases). If you'd like to try it before the next release, use the [latest 2.0.0 release candidate](https://hub.docker.com/r/zurdi15/romm/tags) on the Docker Hub._
-
-***
-
 RomM provides support for various forms of authentication, granting flexibility in securing access to its features. Authentication is an optional feature, disabled by defaults and needs to be manually enabled.
 
 ### Enabling authentication
