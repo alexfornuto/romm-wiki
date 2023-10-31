@@ -31,13 +31,13 @@ Once the installation finishes, the configuration page will appear and should lo
 
 ## Configuration
 
-Configure the required environment variables, ports and paths as per the [example docker-compose.yml](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml) file.
+Configure the required environment variables, ports and paths as per the [example docker-compose.yml](https://github.com/zurdi15/romm/blob/release/examples/docker-compose.example.yml) file.
 
 ![258862729-c0e0ae7e-c3e2-46c8-91f8-2c5ca2a1039e](https://github.com/zurdi15/romm/assets/3247106/427d9f98-ea34-4bf4-9acf-ee1a57c8a91d)
 
 ### MariaDB
 
-To use the MariaDB container setup in #prerequisites, add config options for the environment variables. Descriptions of the config options and sensible defaults are listed in the [example docker-compose.yml](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml) file.
+To use the MariaDB container setup in #prerequisites, add config options for the environment variables. Descriptions of the config options and sensible defaults are listed in the [example docker-compose.yml](https://github.com/zurdi15/romm/blob/release/examples/docker-compose.example.yml) file.
 
 - ROMM_DB_DRIVER: `mariadb`
 - DB_HOST
