@@ -20,6 +20,6 @@ When authentication is enabled, most endpoints will return a `403 Forbidden` res
 
 CSRF protection is also enabled, which helps to mitigates [CSRF attacks](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html) (useful if your instance is public). If you encounter a `Forbidden (403) CSRF verification failed` error, simply reloading your browser should force it to fetch a fresh CSRF cookie.
 
-### Error: 400 Bad Request on the Websocket endpoint
+### Error: `400 Bad Request` on the Websocket endpoint
 
 If you're running RomM behind a reverse-proxy (Caddy, NGINX, etc.), ensure that websockets are supported and enabled. This may vary depending on the reverse proxy solution being used. In the case of Nginx Proxy Manager, enable the "Websockets Support" toggle when editing the proxy host.
