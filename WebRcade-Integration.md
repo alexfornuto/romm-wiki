@@ -5,7 +5,7 @@ RomM exposes an API endpoint that serves a compatible JSON feed of supported pla
 ### Some notes before starting
 
 * Save & state files cannot be exported from webRcade
-* The JSON feed does not currently support (BIOS files)[https://docs.webrcade.com/apps/emulators/psx/#bios-files]
+* The JSON feed does not currently support [BIOS files](https://docs.webrcade.com/apps/emulators/psx/#bios-files)
 * [Local feeds](#customizing-the-feed) will not stay up-to-date with your RomM library
 * A bug in the latest release causes the game covers not to load if RomM is not accessible to the internet
 
