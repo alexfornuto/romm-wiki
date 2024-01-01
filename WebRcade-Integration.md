@@ -2,9 +2,9 @@
 
 RomM exposes an API endpoint that serves a compatible JSON feed of supported platforms and games. Since webRcade runs within the context of your browser, you RomM instances _does not_ need to be exposed to the web. Further documentation can be found in the [User Guide](https://docs.webrcade.com/userguide/).
 
-### Some notes before starting
+**IMPORTANT**: You must set the `ROMM_HOST` environment variable to your host ip or domain name (including http(s)://, subdomain and port if needed).
 
-**IMPORTANT**: Set the `ROMM_HOST` environment variable to your host ip or domain name (including http(s)://, subdomain and port if needed)
+### Some notes before starting
 
 * Save & state files cannot be exported from webRcade
 * The JSON feed does not currently support [BIOS files](https://docs.webrcade.com/apps/emulators/psx/#bios-files)
