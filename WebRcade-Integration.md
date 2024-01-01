@@ -4,6 +4,8 @@ RomM exposes an API endpoint that serves a compatible JSON feed of supported pla
 
 ### Some notes before starting
 
+**IMPORTANT**: Set the `ROMM_HOST` environment variable to your host ip or domain name (including http(s)://, subdomain and port if needed)
+
 * Save & state files cannot be exported from webRcade
 * The JSON feed does not currently support [BIOS files](https://docs.webrcade.com/apps/emulators/psx/#bios-files)
 * [Local feeds](#customizing-the-feed) will not stay up-to-date with your RomM library
