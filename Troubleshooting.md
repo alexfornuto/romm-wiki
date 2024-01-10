@@ -6,6 +6,12 @@ There are a few common reasons why a scan may end instantly/without scanning pla
 * Incorrect permissions: the app needs to read the files and folders in your library, check their permissions with `ls -lh`
 * Invalid folder structure: verify that your folder structure matches the one in the [README](https://github.com/zurdi15/romm#-folder-structure)
 
+### Roms not found for platform X. Check RomM folder structure here: https://github.com/zurdi15/romm#-folder-structure
+
+This is the same issue as the one above, and can be quickly solved by verifying your folder structure. RomM expects a library with a folder named `roms` in it, for example:
+- "/server/media/library:/romm/library"
+- "/server/media/games/roms:/romm/library/roms"
+
 ### Scan does not recognize a platform
 
 When scanning the folders mounted in `/library/roms`, the scanner tries to match the folder name with the platform's slug in IGDB. If you notice that the scanner isn't detecting a platform, verify that the folder name matches the slug in the url of the [platform in IGDB](https://www.igdb.com/platforms). For example, the Nintendo 64DD has the URL https://www.igdb.com/platforms/nintendo-64dd, so the folder should be named `nintendo-64dd`.
