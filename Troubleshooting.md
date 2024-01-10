@@ -6,7 +6,7 @@ There are a few common reasons why a scan may end instantly/without scanning pla
 * Incorrect permissions: the app needs to read the files and folders in your library, check their permissions with `ls -lh`
 * Invalid folder structure: verify that your folder structure matches the one in the [README](https://github.com/zurdi15/romm#-folder-structure)
 
-### Roms not found for platform X. Check RomM folder structure here: https://github.com/zurdi15/romm#-folder-structure
+### Roms not found for platform X, check romm folder structure
 
 This is the same issue as the one above, and can be quickly solved by verifying your folder structure. RomM expects a library with a folder named `roms` in it, for example:
 - "/server/media/library:/romm/library"
