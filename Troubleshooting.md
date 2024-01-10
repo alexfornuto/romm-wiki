@@ -9,8 +9,8 @@ There are a few common reasons why a scan may end instantly/without scanning pla
 ### Roms not found for platform X, check romm folder structure
 
 This is the same issue as the one above, and can be quickly solved by verifying your folder structure. RomM expects a library with a folder named `roms` in it, for example:
-- "/server/media/library:/romm/library"
-- "/server/media/games/roms:/romm/library/roms"
+- `/server/media/library:/romm/library`
+- `/server/media/games/roms:/romm/library/roms`
 
 ### Scan does not recognize a platform
 
