@@ -1,3 +1,5 @@
+## Scanning
+
 ### Scan is skipping all platforms/ends instantly
 
 There are a few common reasons why a scan may end instantly/without scanning platforms
@@ -16,17 +18,11 @@ This is the same issue as the one above, and can be quickly solved by verifying 
 
 When scanning the folders mounted in `/library/roms`, the scanner tries to match the folder name with the platform's slug in IGDB. If you notice that the scanner isn't detecting a platform, verify that the folder name matches the slug in the url of the [platform in IGDB](https://www.igdb.com/platforms). For example, the Nintendo 64DD has the URL https://www.igdb.com/platforms/nintendo-64dd, so the folder should be named `nintendo-64dd`.
 
-### Restarting the container when using SQLite drops all the data/requires a full re-scan
+### Scan times out after ~4 hours
 
-Verify that the database is mapped to a persistent storage volume in your docker compose or Unraid template.
+The background scan task times out after 4 hours, which can happen if you have a very large library. The easiest work around is to keep running scans every 4 hours, **without** checking the "Complete rescan" option.
 
-```
-    "/path/to/database:/romm/database" # [Optional] Only needed if ROMM_DB_DRIVER=sqlite or not set
-```
-
-### Error: `Could not get twitch auth token: check client_id and client_secret`
-
-This is likely due to misconfigured environment variables; verify that `CLIENT_ID` and `CLIENT_SECRET` are set correctly, and that both match the values in IGDB.
+## API Requests
 
 ### Error: `403 Forbidden` 
 
@@ -41,3 +37,17 @@ This error is known to happen on Chrome, but could happen in other browsers; man
 ### Error: `400 Bad Request` on the Websocket endpoint
 
 If you're running RomM behind a reverse-proxy (Caddy, NGINX, etc.), ensure that websockets are supported and enabled. This may vary depending on the reverse proxy solution being used. In the case of Nginx Proxy Manager, enable the "Websockets Support" toggle when editing the proxy host.
+
+## Miscellaneous
+
+### Restarting the container when using SQLite drops all the data/requires a full re-scan
+
+Verify that the database is mapped to a persistent storage volume in your docker compose or Unraid template.
+
+```
+    "/path/to/database:/romm/database" # [Optional] Only needed if ROMM_DB_DRIVER=sqlite or not set
+```
+
+### Error: `Could not get twitch auth token: check client_id and client_secret`
+
+This is likely due to misconfigured environment variables; verify that `CLIENT_ID` and `CLIENT_SECRET` are set correctly, and that both match the values in IGDB.
