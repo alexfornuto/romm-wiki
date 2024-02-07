@@ -1,8 +1,8 @@
 Version 3.0 of RomM introduces a number of breaking changes aimed at improving performance and usability, which will require some users to make specific changes before upgrading to ensure compatibility and to take full advantage of the new features.
 
-All of the following changes are reflected in the [example docker-compose.yml file](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml), which has been simplified greatly.
+All of the following changes are reflected in the [example docker-compose.yml file](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml), which has been simplified greatly. **Please read this entire file carefully, as failing to do so may cause RomM to become inaccessible or unresponsive.**
 
-## SQLite no longer supported
+## Dropped support for SQLite
 
 We're removed support for SQLite as we've faced a number of engineering issues with it in the past, and MariaDB has proven more stable and robust. If you currently use SQLite, we'll automatically migrate your data from SQLite to MariaDB, but you'll **first need to make the following changes before upgrading to the latest image.**
 
@@ -39,7 +39,7 @@ As Redis is [required for authentication](https://github.com/zurdi15/romm/wiki/A
 - REDIS_PORT=6379
 ```
 
-To setup a new Redis container, have a look at the [example docker-compose.yml file](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml).
+To setup a new Redis container, have a look at the [example docker-compose.yml file](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml) or read more about [Redis in our wiki](https://github.com/zurdi15/romm/wiki/Redis-Cache).
 
 ## Support for saves, states and screenshots
 
