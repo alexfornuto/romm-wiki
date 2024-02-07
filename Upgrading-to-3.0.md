@@ -13,7 +13,7 @@ In your env variables, change `ROMM_DB_DRIVER` to `mariadb` (or remove it comple
 - DB_PORT=3306
 - DB_NAME=romm # Should match MYSQL_DATABASE in mariadb
 - DB_USER=romm-user # Should match MYSQL_USER in mariadb
-- DB_PASSWORD= # Should match MYSQL_PASSWORD in mariadb
+- DB_PASSWD= # Should match MYSQL_PASSWORD in mariadb
 ```
 
 To setup a new MariaDB container, have a look at the [example docker-compose.yml file](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml).
