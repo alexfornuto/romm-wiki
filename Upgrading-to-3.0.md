@@ -45,6 +45,6 @@ To setup a new Redis container, have a look at the [example docker-compose.yml f
 
 This version introduces preliminary support for uploading/downloading saves, states and screenshots (read more about it in the 3.0 release notes). We've added a new volume mapping for these types of files called `assets`, which you'll want to bind to a local folder (or volume) so they'll persist. In your volumes section, add the following mapping, where `/path/to/assets/` is some folder where you'll want to store these assets (and make sure that folder exists):
 
-"/path/to/assets:/romm/assets"
+`- /path/to/assets:/romm/assets`
 
 We recommend creating a folder next to your `library`/the one mapped to `/romm/library` in order to keep all your RomM files in the same place.
