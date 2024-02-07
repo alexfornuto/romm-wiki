@@ -1,8 +1,8 @@
-RomM provides support for various forms of authentication, granting flexibility in securing access to its features. Authentication is an optional feature, disabled by defaults and needs to be manually enabled.
+RomM provides support for various forms of authentication, granting flexibility in securing access to its features.
 
-### Enabling authentication
+### Setup
 
-Authentication can be enabled by setting the `ROMM_AUTH_ENABLED` environment variable to `true`.
+You'll want to set the following env variables before starting RomM:
 
 - `ROMM_AUTH_USERNAME` and `ROMM_AUTH_PASSWORD` should be set to create the default admin user
 - `ROMM_AUTH_SECRET_KEY` is required and can be generated with `openssl rand -hex 32`
@@ -21,18 +21,17 @@ Authentication can be enabled by setting the `ROMM_AUTH_ENABLED` environment var
       image: zurdi15/romm:latest
       container_name: romm
       environment:
-        - ROMM_DB_DRIVER=sqlite
-        - ROMM_AUTH_ENABLED=true
         - ROMM_AUTH_SECRET_KEY=<secret key> # Generate a key with `openssl rand -hex 32`
         - ROMM_AUTH_USERNAME=admin
         - ROMM_AUTH_PASSWORD=<admin password> # default: admin
-        - ENABLE_EXPERIMENTAL_REDIS=true
         - REDIS_HOST=redis
         - REDIS_PORT=6379
         - IGDB_CLIENT_ID=<IGDB client id>
         - IGDB_CLIENT_SECRET=<IGDB client secret>
       volumes:
-        - "/path/to/library:/romm/library"
+        - romm_resources:/romm/resources" # Resources fetched from IGDB (covers, screenshots, etc.)
+        - "/path/to/library:/romm/library" # Your game library
+        - "/path/to/assets:/romm/assets" # Uploaded saves, states, etc.
       ports:
         - 80:8080
       depends_on:
