@@ -18,12 +18,6 @@ In your env variables, change `ROMM_DB_DRIVER` to `mariadb` (or remove it comple
 
 To setup a new MariaDB container, have a look at the [example docker-compose.yml file](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml).
 
-## Configuration binding
-
-Now the configuration is binded as a folder instead as a file. You need to put your ``config.yml`` file inside a folder and bind it to ``/romm/config``:
-
-``- /path/to/config:/romm/config``
-
 ## Authentication as standard
 
 To support new features like EmulatorJS and saves/states management, we've decided to require authentication for all users. Anyone currently running RomM with authentication disabled will need to remove the `ROMM_AUTH_ENABLED` env variable and add the following ones:
@@ -47,10 +41,20 @@ As Redis is [required for authentication](https://github.com/zurdi15/romm/wiki/A
 
 To setup a new Redis container, have a look at the [example docker-compose.yml file](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml) or read more about [Redis in our wiki](https://github.com/zurdi15/romm/wiki/Redis-Cache).
 
+## Configuration folder
+
+Mounting the `config.yml` file is now done by mounting a `config` folder.. Place your existing ``config.yml`` file inside a folder and bind it to `/romm/config`:
+
+```
+- /path/to/config:/romm/config
+```
+
 ## Support for saves, states and screenshots
 
 This version introduces preliminary support for uploading/downloading saves, states and screenshots (read more about it in the 3.0 release notes). We've added a new volume mapping for these types of files called `assets`, which you'll want to bind to a local folder (or volume) so they'll persist. In your volumes section, add the following mapping, where `/path/to/assets/` is some folder where you'll want to store these assets (and make sure that folder exists):
 
-`- /path/to/assets:/romm/assets`
+```
+- /path/to/assets:/romm/assets
+```
 
 We recommend creating a folder next to your `library`/the one mapped to `/romm/library` in order to keep all your RomM files in the same place.
