@@ -18,6 +18,12 @@ In your env variables, change `ROMM_DB_DRIVER` to `mariadb` (or remove it comple
 
 To setup a new MariaDB container, have a look at the [example docker-compose.yml file](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml).
 
+## Configuration binding
+
+Now the configuration is binded as a folder instead as a file. You need to put your ``config.yml`` file inside a folder and bind it to ``/romm/config``:
+
+``- /path/to/config:/romm/config``
+
 ## Authentication as standard
 
 To support new features like EmulatorJS and saves/states management, we've decided to require authentication for all users. Anyone currently running RomM with authentication disabled will need to remove the `ROMM_AUTH_ENABLED` env variable and add the following ones:
