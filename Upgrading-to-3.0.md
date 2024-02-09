@@ -49,6 +49,8 @@ Mounting the `config.yml` file is now done by mounting a `config` folder.. Place
 - /path/to/config:/romm/config
 ```
 
+Updated [config.example.yml](https://github.com/zurdi15/romm/blob/master/examples/config.example.yml)
+
 ## Support for saves, states and screenshots
 
 This version introduces preliminary support for uploading/downloading saves, states and screenshots (read more about it in the 3.0 release notes). We've added a new volume mapping for these types of files called `assets`, which you'll want to bind to a local folder (or volume) so they'll persist. In your volumes section, add the following mapping, where `/path/to/assets/` is some folder where you'll want to store these assets (and make sure that folder exists):
