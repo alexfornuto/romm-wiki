@@ -1,4 +1,4 @@
-## ⚠️ Support for webRcade will be deprecated in version 3.0 in favor the built-in EmulatorJS player
+## ⚠️ Support for webRcade will be removed in version 3.0 in favor the built-in EmulatorJS player
 
 [WebRcade](https://github.com/webrcade/webrcade) is a platform that enables playing games entirely within the context of the browser across a [wide variety of platforms](https://docs.webrcade.com/platforms/), with support for game pads (Bluetooth and USB) for both front-end navigation and in-game.
 
