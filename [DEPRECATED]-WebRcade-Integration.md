@@ -1,3 +1,5 @@
+## ⚠️ Support for webRcade will be deprecated in version 3.0 in favor the built-in EmulatorJS player
+
 [WebRcade](https://github.com/webrcade/webrcade) is a platform that enables playing games entirely within the context of the browser across a [wide variety of platforms](https://docs.webrcade.com/platforms/), with support for game pads (Bluetooth and USB) for both front-end navigation and in-game.
 
 RomM exposes an API endpoint that serves a compatible JSON feed of supported platforms and games. Since webRcade runs within the context of your browser, you RomM instances _does not_ need to be exposed to the web. Further documentation can be found in the [User Guide](https://docs.webrcade.com/userguide/).
