@@ -196,4 +196,6 @@ visionOS | `visionos` | <a href="https://www.igdb.com/platforms/visionos" target
 
 #### Generating the list
 
-> Array.from(document.querySelectorAll(".media-body a")).map(a => `${a.innerText} | \`${a.href.split("/")[4]}\` | <a href="${a.href}" target="_blank" rel="noopener norefer">![IGDB logo](https://github.com/zurdi15/romm/assets/3247106/414053de-5649-4deb-a70e-e5d7cbab9820)</a>`).sort().join('\n')
+```js
+Array.from(document.querySelectorAll(".media-body a")).map(a => `${a.innerText} | \`${a.href.split("/")[4]}\` | <a href="${a.href}" target="_blank" rel="noopener norefer">![IGDB logo](https://github.com/zurdi15/romm/assets/3247106/414053de-5649-4deb-a70e-e5d7cbab9820)</a>`).sort().join('\n')
+```
