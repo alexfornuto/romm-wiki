@@ -1,4 +1,4 @@
-[EmulatorJS](https://emulatorjs.org/) is a web-based emulator for various system; that is, it allows you to run old games in your web browser. It is based on [Emscripten](https://emscripten.org/), which is a toolchain for compiling C and C++ code to WebAssembly.
+[EmulatorJS](https://emulatorjs.org/) is a web-based emulator for various system; that is, it allows you to run old games in your web browser. It's based on [Emscripten](https://emscripten.org/), which is a toolchain for compiling C and C++ code to WebAssembly.
 
 ### Loading saves and states
 
