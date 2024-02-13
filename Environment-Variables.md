@@ -18,7 +18,6 @@ This is a complete list of available envrionment variables; required variables a
 |ROMM_AUTH_PASSWORD|Password for default user||`admin`|
 |ROMM_AUTH_SECRET_KEY|Generate a key with `openssl rand -hex 32`|✓||
 |ROMM_HOST|Host name of ROMM instance||`localhost`|
-|ROMM_BASE_PATH|Folder name of mounted `romm` folder||`romm`|
 |ENABLE_RESCAN_ON_FILESYSTEM_CHANGE|Enable rescanning of library when filesystem changes||`false`|
 |RESCAN_ON_FILESYSTEM_CHANGE_DELAY|Delay in minutes before rescanning library when filesystem changes||`5`|
 |ENABLE_SCHEDULED_RESCAN|Enable scheduled rescanning of library||`false`|
@@ -27,6 +26,3 @@ This is a complete list of available envrionment variables; required variables a
 |SCHEDULED_UPDATE_SWITCH_TITLEDB_CRON|Cron expression for scheduled updating of Switch TitleDB||`"0 4 * * *"`|
 |ENABLE_SCHEDULED_UPDATE_MAME_XML|Enable scheduled updating of MAME XML index||`false`|
 |SCHEDULED_UPDATE_MAME_XML_CRON|Cron expression for scheduled updating of MAME XML||`"0 5 * * *"`|
-
-## Configuration File
-
