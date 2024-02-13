@@ -1,6 +1,4 @@
-## Environment Variables
-
-This is a complete list of available envrionment variables; required variables are marked with a `✓`.
+This is a complete list of available environment variables; required variables are marked with a `✓`.
 
 |Variable|Description|Required|Default|
 |---|---|:---:|---|
