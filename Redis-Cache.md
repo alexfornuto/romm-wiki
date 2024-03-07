@@ -9,6 +9,7 @@
 To start using Redis, add these environment variables (see [docker-compose.example.yml](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml))
 
 ```
+- ENABLE_EXPERIMENTAL_REDIS=true
 - REDIS_HOST=localhost # Redis server hostname or IP.
 - REDIS_PORT=6379 # Redis server port number.
 ```
