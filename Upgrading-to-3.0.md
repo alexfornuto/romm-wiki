@@ -30,16 +30,15 @@ To support new features like EmulatorJS and saves/states management, we've decid
 
 We understand that this requirement for authentication might conflict with the way some users currently share their collection with others (unrestricted access for all). However, given the exciting new features we've built, and the ones we're looking to build in the near future, we feel this is the right decision for the project.
 
-## Redis is now required
+## Redis is now builtin
 
-As Redis is [required for authentication](https://github.com/zurdi15/romm/wiki/Authentication) to work, users who don't current have Redis enabled will need to run a Redis container and enable support in RomM. This can be done by setting `ENABLE_EXPERIMENTAL_REDIS` env variable to `true` (or removing it completely) and adding the following env variables:
+As Redis is [required for authentication](https://github.com/zurdi15/romm/wiki/Authentication) to work, we've integrated it directly into the docker image. If you're currently running the experimental Redis container, you can remove it, along with these environment variables:
 
 ```
-- REDIS_HOST=redis # Points to your redis instance
-- REDIS_PORT=6379
+- ENABLE_EXPERIMENTAL_REDIS
+- REDIS_HOST
+- REDIS_PORT
 ```
-
-To setup a new Redis container, have a look at the [example docker-compose.yml file](https://github.com/zurdi15/romm/blob/master/examples/docker-compose.example.yml) or read more about [Redis in our wiki](https://github.com/zurdi15/romm/wiki/Redis-Cache).
 
 ## Configuration folder
 
