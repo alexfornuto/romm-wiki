@@ -30,7 +30,7 @@ To support new features like EmulatorJS and saves/states management, we've decid
 
 We understand that this requirement for authentication might conflict with the way some users currently share their collection with others (unrestricted access for all). However, given the exciting new features we've built, and the ones we're looking to build in the near future, we feel this is the right decision for the project.
 
-## Redis is now builtin
+## Redis is now built-in
 
 As Redis is [required for authentication](https://github.com/zurdi15/romm/wiki/Authentication) to work, we've integrated it directly into the docker image. If you're currently running the experimental Redis container, you can remove it, along with these environment variables:
 
