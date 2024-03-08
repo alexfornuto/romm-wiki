@@ -39,7 +39,6 @@ Configure the required environment variables, ports and paths as per the [exampl
 
 To use the MariaDB container setup in #prerequisites, add config options for the environment variables. Descriptions of the config options and sensible defaults are listed in the [example docker-compose.yml](https://github.com/zurdi15/romm/blob/release/examples/docker-compose.example.yml) file.
 
-- ROMM_DB_DRIVER: `mariadb`
 - DB_HOST
 - DB_PORT
 - DB_USER
