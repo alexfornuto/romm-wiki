@@ -7,44 +7,6 @@ You'll want to set the following env variables before starting RomM:
 - `ROMM_AUTH_USERNAME` and `ROMM_AUTH_PASSWORD` should be set to create the default admin user
 - `ROMM_AUTH_SECRET_KEY` is required and can be generated with `openssl rand -hex 32`
 
-<details>
-  <summary>Example docker-compose.yml</summary>
-  
-  ```yaml
-  version: "3"
-  volumes:
-    mysql_data:
-  services:
-    romm:
-      image: zurdi15/romm:latest
-      container_name: romm
-      environment:
-        - ROMM_AUTH_SECRET_KEY=<secret key> # Generate a key with `openssl rand -hex 32`
-        - ROMM_AUTH_USERNAME=admin
-        - ROMM_AUTH_PASSWORD=<admin password> # default: admin
-        - REDIS_HOST=redis
-        - REDIS_PORT=6379
-        - IGDB_CLIENT_ID=<IGDB client id>
-        - IGDB_CLIENT_SECRET=<IGDB client secret>
-      volumes:
-        - romm_resources:/romm/resources" # Resources fetched from IGDB (covers, screenshots, etc.)
-        - "/path/to/library:/romm/library" # Your game library
-        - "/path/to/assets:/romm/assets" # Uploaded saves, states, etc.
-      ports:
-        - 80:8080
-      depends_on:
-        - romm_db
-      restart: "unless-stopped"
-
-    redis:
-      image: redis:alpine
-      container_name: redis
-      restart: unless-stopped
-      ports:
-        - 6379:6379
-  ```
-</details>
-
 ### Sessions
 
 When the `/login` endpoint is called with valid credentials, a `session_id` is generated, stored as a cookie and sent to the browser. The same token is used to create a cache entry in Redis (or in-memory if Redis is disabled) which maps the token to the user. This way no sensitive information is stored on the client.
@@ -85,15 +47,9 @@ For more information on OpenAPI, visit the [OpenAPI Specification](https://www.o
 
 ## FAQ
 
-### Can I disable authentication after having it enabled?
+### Can I disable authentication?
 
-Authentication can be disabled at any time with no risk to data. Permissions checks are bypassed, so RomM will grant full access to any user who accesses the app. Existing users and permissions are maintained in the database; if authentication is re-enabled, those users will still be able to access RomM with their credentials.
-
-**Note that since full access is granted to all endpoints when authentication is disabled, any visitor will be able to create/update/delete any user, even admins.**
-
-### Is the API available when authentication is disabled?
-
-Yes, but permission checks are bypassed, so full access to every endpoint is granted to any user/machine who requests it.
+No, authentication is required and enabled by default.
 
 ### I want to allow an EDITOR to edit ROMs but not delete them. Can I do that?
 
