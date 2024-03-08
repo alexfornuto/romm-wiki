@@ -13,7 +13,7 @@ This is a complete list of available environment variables; required variables a
 |ROMM_AUTH_PASSWORD|Password for default user||`admin`|
 |ROMM_AUTH_SECRET_KEY|Generate a key with `openssl rand -hex 32`|✓||
 |ROMM_HOST|Host name of ROMM instance||`localhost`|
-|DISABLE_CSRF_PROTECTION|Disables [CSRF protection](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html) (not recommended)||false|
+|DISABLE_CSRF_PROTECTION|Disables [CSRF protection](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html) (not recommended)||`false`|
 |ENABLE_RESCAN_ON_FILESYSTEM_CHANGE|Enable rescanning of library when filesystem changes||`false`|
 |RESCAN_ON_FILESYSTEM_CHANGE_DELAY|Delay in minutes before rescanning library when filesystem changes||`5`|
 |ENABLE_SCHEDULED_RESCAN|Enable scheduled rescanning of library||`false`|
