@@ -20,7 +20,6 @@ Note that only the following systems are currently supported:
 * Neo Geo Pocket Color
 * Nintendo Entertainment System (NES)
 * Nintendo Family Computer (Famicom)
-* Nintendo 64
 * Nintendo DS
 * Game Boy
 * Game Boy Color
@@ -41,6 +40,7 @@ While the systems below are supported by EmulatorJS, they are not yet supported 
 
 * 3DO
 * Arcade/MAME
+* Nintendo 64
 * PlayStation (PS)
 * PlayStation Portable (PSP)
 * Sega CD
