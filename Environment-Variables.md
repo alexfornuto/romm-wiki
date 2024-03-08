@@ -9,9 +9,6 @@ This is a complete list of available environment variables; required variables a
 |DB_NAME|Should match MYSQL_DATABASE in mariadb||`romm`|
 |DB_USER|Should match MYSQL_USER in mariadb|✓||
 |DB_PASSWD|Should match MYSQL_PASSWORD in mariadb|✓||
-|REDIS_HOST|Host name of Redis instance|✓|`localhost`|
-|REDIS_PORT|Port number of Redis instance||`6379`|
-|REDIS_PASSWORD|Only set this if Redis is password protected|||
 |ROMM_AUTH_USERNAME|Username for default user||`admin`|
 |ROMM_AUTH_PASSWORD|Password for default user||`admin`|
 |ROMM_AUTH_SECRET_KEY|Generate a key with `openssl rand -hex 32`|✓||
