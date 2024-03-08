@@ -7,8 +7,6 @@ You'll want to set the following env variables before starting RomM:
 - `ROMM_AUTH_USERNAME` and `ROMM_AUTH_PASSWORD` should be set to create the default admin user
 - `ROMM_AUTH_SECRET_KEY` is required and can be generated with `openssl rand -hex 32`
 
-**Note: sessions are backed by Redis, and login will not work without it ([how to enable Redis](https://github.com/zurdi15/romm/wiki/Redis-Cache))**
-
 <details>
   <summary>Example docker-compose.yml</summary>
   
