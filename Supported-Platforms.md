@@ -23,7 +23,9 @@ Amstrad PCW | `amstrad-pcw` | <a href="https://www.igdb.com/platforms/amstrad-pc
 Android | `android` | <a href="https://www.igdb.com/platforms/android" target="_blank" rel="noopener norefer">IGDB</a>
 Apple II | `appleii` | <a href="https://www.igdb.com/platforms/appleii" target="_blank" rel="noopener norefer">IGDB</a>
 Apple IIGS | `apple-iigs` | <a href="https://www.igdb.com/platforms/apple-iigs" target="_blank" rel="noopener norefer">IGDB</a>
+Apple Pippin | `apple-pippin` | <a href="https://www.igdb.com/platforms/apple-pippin" target="_blank" rel="noopener norefer">IGDB</a>
 Arcade | `arcade` | <a href="https://www.igdb.com/platforms/arcade" target="_blank" rel="noopener norefer">IGDB</a>
+Arcadia 2001 | `arcadia-2001` | <a href="https://www.igdb.com/platforms/arcadia-2001" target="_blank" rel="noopener norefer">IGDB</a>
 Arduboy | `arduboy` | <a href="https://www.igdb.com/platforms/arduboy" target="_blank" rel="noopener norefer">IGDB</a>
 Atari 2600 | `atari2600` | <a href="https://www.igdb.com/platforms/atari2600" target="_blank" rel="noopener norefer">IGDB</a>
 Atari 5200 | `atari5200` | <a href="https://www.igdb.com/platforms/atari5200" target="_blank" rel="noopener norefer">IGDB</a>
@@ -70,6 +72,7 @@ Game Boy Color | `gbc` | <a href="https://www.igdb.com/platforms/gbc" target="_b
 Game Boy | `gb` | <a href="https://www.igdb.com/platforms/gb" target="_blank" rel="noopener norefer">IGDB</a>
 Game.com | `game-dot-com` | <a href="https://www.igdb.com/platforms/game-dot-com" target="_blank" rel="noopener norefer">IGDB</a>
 Gear VR | `gear-vr` | <a href="https://www.igdb.com/platforms/gear-vr" target="_blank" rel="noopener norefer">IGDB</a>
+Gizmondo | `gizmondo` | <a href="https://www.igdb.com/platforms/gizmondo" target="_blank" rel="noopener norefer">IGDB</a>
 Google Stadia | `stadia` | <a href="https://www.igdb.com/platforms/stadia" target="_blank" rel="noopener norefer">IGDB</a>
 HP 2100 | `hp2100` | <a href="https://www.igdb.com/platforms/hp2100" target="_blank" rel="noopener norefer">IGDB</a>
 HP 3000 | `hp3000` | <a href="https://www.igdb.com/platforms/hp3000" target="_blank" rel="noopener norefer">IGDB</a>
@@ -129,6 +132,8 @@ PDP-11 | `pdp11` | <a href="https://www.igdb.com/platforms/pdp11" target="_blank
 PDP-8 | `pdp-8--1` | <a href="https://www.igdb.com/platforms/pdp-8--1" target="_blank" rel="noopener norefer">IGDB</a>
 PLATO | `plato--1` | <a href="https://www.igdb.com/platforms/plato--1" target="_blank" rel="noopener norefer">IGDB</a>
 Palm OS | `palm-os` | <a href="https://www.igdb.com/platforms/palm-os" target="_blank" rel="noopener norefer">IGDB</a>
+Panasonic Jungle | `panasonic-jungle` | <a href="https://www.igdb.com/platforms/panasonic-jungle" target="_blank" rel="noopener norefer">IGDB</a>
+Panasonic M2 | `panasonic-m2` | <a href="https://www.igdb.com/platforms/panasonic-m2" target="_blank" rel="noopener norefer">IGDB</a>
 Philips CD-i | `philips-cd-i` | <a href="https://www.igdb.com/platforms/philips-cd-i" target="_blank" rel="noopener norefer">IGDB</a>
 PlayStation 2 | `ps2` | <a href="https://www.igdb.com/platforms/ps2" target="_blank" rel="noopener norefer">IGDB</a>
 PlayStation 3 | `ps3` | <a href="https://www.igdb.com/platforms/ps3" target="_blank" rel="noopener norefer">IGDB</a>
@@ -144,6 +149,7 @@ Playdia | `playdia` | <a href="https://www.igdb.com/platforms/playdia" target="_
 Plug & Play | `plug-and-play` | <a href="https://www.igdb.com/platforms/plug-and-play" target="_blank" rel="noopener norefer">IGDB</a>
 PocketStation | `pocketstation` | <a href="https://www.igdb.com/platforms/pocketstation" target="_blank" rel="noopener norefer">IGDB</a>
 Pokémon mini | `pokemon-mini` | <a href="https://www.igdb.com/platforms/pokemon-mini" target="_blank" rel="noopener norefer">IGDB</a>
+R-Zone | `r-zone` | <a href="https://www.igdb.com/platforms/r-zone" target="_blank" rel="noopener norefer">IGDB</a>
 SDS Sigma 7 | `sdssigma7` | <a href="https://www.igdb.com/platforms/sdssigma7" target="_blank" rel="noopener norefer">IGDB</a>
 SG-1000 | `sg1000` | <a href="https://www.igdb.com/platforms/sg1000" target="_blank" rel="noopener norefer">IGDB</a>
 Satellaview | `satellaview` | <a href="https://www.igdb.com/platforms/satellaview" target="_blank" rel="noopener norefer">IGDB</a>
@@ -167,6 +173,7 @@ TRS-80 Color Computer | `trs-80-color-computer` | <a href="https://www.igdb.com/
 TRS-80 | `trs-80` | <a href="https://www.igdb.com/platforms/trs-80" target="_blank" rel="noopener norefer">IGDB</a>
 Tapwave Zodiac | `zod` | <a href="https://www.igdb.com/platforms/zod" target="_blank" rel="noopener norefer">IGDB</a>
 Tatung Einstein | `tatung-einstein` | <a href="https://www.igdb.com/platforms/tatung-einstein" target="_blank" rel="noopener norefer">IGDB</a>
+Terebikko / See 'n Say Video Phone | `terebikko-slash-see-n-say-video-phone` | <a href="https://www.igdb.com/platforms/terebikko-slash-see-n-say-video-phone" target="_blank" rel="noopener norefer">IGDB</a>
 Texas Instruments TI-99 | `ti-99` | <a href="https://www.igdb.com/platforms/ti-99" target="_blank" rel="noopener norefer">IGDB</a>
 Thomson MO5 | `thomson-mo5` | <a href="https://www.igdb.com/platforms/thomson-mo5" target="_blank" rel="noopener norefer">IGDB</a>
 TurboGrafx-16/PC Engine | `turbografx16--1` | <a href="https://www.igdb.com/platforms/turbografx16--1" target="_blank" rel="noopener norefer">IGDB</a>
@@ -187,7 +194,7 @@ WonderSwan Color | `wonderswan-color` | <a href="https://www.igdb.com/platforms/
 WonderSwan | `wonderswan` | <a href="https://www.igdb.com/platforms/wonderswan" target="_blank" rel="noopener norefer">IGDB</a>
 Xbox 360 | `xbox360` | <a href="https://www.igdb.com/platforms/xbox360" target="_blank" rel="noopener norefer">IGDB</a>
 Xbox One | `xboxone` | <a href="https://www.igdb.com/platforms/xboxone" target="_blank" rel="noopener norefer">IGDB</a>
-Xbox Series X/S | `series-x` | <a href="https://www.igdb.com/platforms/series-x" target="_blank" rel="noopener norefer">IGDB</a>
+Xbox Series X|S | `series-x` | <a href="https://www.igdb.com/platforms/series-x" target="_blank" rel="noopener norefer">IGDB</a>
 Xbox | `xbox` | <a href="https://www.igdb.com/platforms/xbox" target="_blank" rel="noopener norefer">IGDB</a>
 ZX Spectrum | `zxs` | <a href="https://www.igdb.com/platforms/zxs" target="_blank" rel="noopener norefer">IGDB</a>
 Zeebo | `zeebo` | <a href="https://www.igdb.com/platforms/zeebo" target="_blank" rel="noopener norefer">IGDB</a>
