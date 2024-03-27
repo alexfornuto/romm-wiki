@@ -4,7 +4,6 @@ This is a complete list of available environment variables; required variables a
 |---|---|:---:|---|
 |IGDB_CLIENT_ID|Client ID for IGDB API|✓||
 |IGDB_CLIENT_SECRET|Client secret for IGDB API|✓||
-|MOBYGAMES_API_KEY|API key for Mobygames API||
 |DB_HOST|Host name of MariaDB instance|✓|`localhost`|
 |DB_PORT|Port number of MariaDB instance||`3306`|
 |DB_NAME|Should match MYSQL_DATABASE in mariadb||`romm`|
