@@ -14,4 +14,4 @@ Note the client ID and secret that appear on screen, and use them to set `IGDB_C
 
 ## Mobygames
 
-To access the Mobygames API, [create a MobyGames account](https://www.mobygames.com/acct/create_account) and then visit your profile page. Click the 'API' link under your user name to sign up for an API key. Copy the key shown and use it to set `MOBYGAMES_API_KEY`.
+To access the Mobygames API, [create a MobyGames account](https://www.mobygames.com/user/register/) and then visit your profile page. Click the 'API' link under your user name to sign up for an API key. Copy the key shown and use it to set `MOBYGAMES_API_KEY`.
