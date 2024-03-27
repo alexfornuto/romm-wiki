@@ -5,7 +5,7 @@ To access the IGDB API you'll need a Twitch account and a valid phone number for
 * Name: Something **unique or random** like `correct-horse-battery-staple` or `KVV8NDXMSRFJ2MRNPNRSL7GQT`
 * OAuth Redirect URLs: `localhost`
 * Category: `Application Integration`
-* Client Type: Confidential
+* Client Type: `Confidential`
 
 > [!IMPORTANT]  
 > **The name you pick has to be unique! Picking an existing name will fail silently, with no error messages.**
