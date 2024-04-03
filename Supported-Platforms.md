@@ -194,7 +194,7 @@ WonderSwan Color | `wonderswan-color` | <a href="https://www.igdb.com/platforms/
 WonderSwan | `wonderswan` | <a href="https://www.igdb.com/platforms/wonderswan" target="_blank" rel="noopener norefer">IGDB</a>
 Xbox 360 | `xbox360` | <a href="https://www.igdb.com/platforms/xbox360" target="_blank" rel="noopener norefer">IGDB</a>
 Xbox One | `xboxone` | <a href="https://www.igdb.com/platforms/xboxone" target="_blank" rel="noopener norefer">IGDB</a>
-Xbox Series X|S | `series-x` | <a href="https://www.igdb.com/platforms/series-x" target="_blank" rel="noopener norefer">IGDB</a>
+Xbox Series X/S | `series-x` | <a href="https://www.igdb.com/platforms/series-x" target="_blank" rel="noopener norefer">IGDB</a>
 Xbox | `xbox` | <a href="https://www.igdb.com/platforms/xbox" target="_blank" rel="noopener norefer">IGDB</a>
 ZX Spectrum | `zxs` | <a href="https://www.igdb.com/platforms/zxs" target="_blank" rel="noopener norefer">IGDB</a>
 Zeebo | `zeebo` | <a href="https://www.igdb.com/platforms/zeebo" target="_blank" rel="noopener norefer">IGDB</a>
