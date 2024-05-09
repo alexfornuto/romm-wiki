@@ -1,4 +1,9 @@
-> Note: We're in the process of getting RomM listed in the Unraid [Community Apps](https://unraid.net/community/apps) plugin catalogue. In the meantime, the instructions below will allow you to setup RomM manually.
+## Video tutorial
+
+[AlienTech42](https://www.youtube.com/@AlienTech42) has published [a great video](https://www.youtube.com/watch?v=ls5YcsFdwLQ) on installing and running RomM on Unraid. Check it out!
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ls5YcsFdwLQ/0.jpg)](https://www.youtube.com/watch?v=ls5YcsFdwLQ)
+
 
 ## Prerequisites
 
