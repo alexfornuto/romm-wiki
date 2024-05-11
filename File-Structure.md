@@ -1,6 +1,6 @@
 Here is the recommended Folder/File structure in order to ensure your roms are properly identified.  Failure to follow one of these formats **may** work, but is not guaranteed nor supported.
 
-*library* refers to RomM's internal container path, just replace it in your example with the directory containing your roms.
+*library* refers to RomM's internal container path. Replace it in your example with the directory containing your roms.
 
 #### Recommended Format
 
