@@ -55,7 +55,11 @@ This will allow you to generate a key to pull the metadata for your roms using M
 This step will generate a key that is used in the authorization of RomM.  Without this, you will be unable to log in and use the platform.  This step **must** be done on the machine that will be hosting RomM.
 
 1. On the machine that will host RomM, launch the terminal.
-2. Run the following command. ```openssl rand -hex 32```
+2. Run the following command:
+
+    ```sh
+    openssl rand -hex 32
+    ```
 3. Copy the output and save it with your **Client ID** and **Client Secret** from the previous step.
 
 ![](assets\OpenSSL.png)
