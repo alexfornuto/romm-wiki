@@ -6,7 +6,7 @@ Here is the recommended Folder/File structure in order to ensure your roms are p
 
 This is the ideal structure to follow, every new installation should follow this unless absolutely necessary.
 
-Inside of the library should be a single folder called ***roms***.  Herein you will place directories containing the platforms' folder name - see [here](https://github.com/rommapp/romm/wiki/Supported-Platforms) for the list of standard supported platforms, and refer [here](https://github.com/rommapp/romm/wiki/Custom-Platforms) for platforms that are not on the list.
+Inside of the library should be a single folder called ***roms***.  Here you should place directories containing the platforms' folder name - see [Supported Platforms](https://github.com/rommapp/romm/wiki/Supported-Platforms) for the list of standard supported platforms, and refer to [Custom Platforms](https://github.com/rommapp/romm/wiki/Custom-Platforms) for platforms that are not on the list.
 
 ##### Single File ROMs
 
