@@ -1,4 +1,4 @@
-Here is a quick start guide to get you up and running with your RomM instance!  The guide will be split into 3 parts:
+This quick start guide will help you get a RomM instance up and running. It is split into 3 parts:
 
 - Prepare - preparing the environment before executing any code.
 - Build
